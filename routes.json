@@ -1,16 +1,128 @@
 [
-  {"day": 1, "description": "Vertrek Amsterdam - Denver"},
-  {"day": 2, "description": "Denver - Rocky Mountains NP - Cheyenne"},
-  {"day": 3, "description": "Cheyenne - Hot Springs"},
-  {"day": 4, "description": "Hot Springs - Custer SP - Mount Rushmore - Rapid City"},
-  {"day": 5, "description": "Rapid City - Badlands NP - Rapid City"},
-  {"day": 6, "description": "Rapid City - Devil's Tower - Billings"},
-  {"day": 7, "description": "Billings - Cody"},
-  {"day": 8, "description": "Cody - Yellowstone NP"},
-  {"day": 9, "description": "Yellowstone NP - Grand Teton NP - Jackson Hole"},
-  {"day": 10, "description": "Jackson Hole - Salt Lake City"},
-  {"day": 11, "description": "Salt Lake City - Arches NP - Moab"},
-  {"day": 12, "description": "Canyonlands NP"},
-  {"day": 13, "description": "Moab - Denver"},
-  {"day": 14, "description": "Denver - Denver International Airport"}
+  {
+    "day": 1,
+    "title": "Vertrek Amsterdam - Denver",
+    "program": [
+      "Vlucht van Amsterdam naar Denver",
+      "Aankomst in Denver, ophalen huurauto",
+      "Inchecken hotel en diner in de stad"
+    ]
+  },
+  {
+    "day": 2,
+    "title": "Denver - Rocky Mountains NP - Cheyenne",
+    "program": [
+      "Vertrek vroeg richting Rocky Mountains National Park",
+      "Wandelen bij Bear Lake en uitzicht op Longs Peak",
+      "Doorrijden naar Cheyenne, bezoek Old West Museum",
+      "Overnachting in Cheyenne"
+    ]
+  },
+  {
+    "day": 3,
+    "title": "Cheyenne - Hot Springs",
+    "program": [
+      "Ochtend in Cheyenne",
+      "Rijden naar Hot Springs, South Dakota",
+      "Bezoek aan lokale warmwaterbronnen",
+      "Rustige avond in Hot Springs"
+    ]
+  },
+  {
+    "day": 4,
+    "title": "Hot Springs - Custer SP - Mount Rushmore - Rapid City",
+    "program": [
+      "Bezoek Custer State Park met bison spotten",
+      "Bezoek Mount Rushmore",
+      "Inchecken in Rapid City en diner"
+    ]
+  },
+  {
+    "day": 5,
+    "title": "Rapid City - Badlands NP - Rapid City",
+    "program": [
+      "Dagtrip Badlands National Park",
+      "Fotostops en korte hikes",
+      "Terug naar Rapid City"
+    ]
+  },
+  {
+    "day": 6,
+    "title": "Rapid City - Devil's Tower - Billings",
+    "program": [
+      "Vertrek naar Devil's Tower National Monument",
+      "Bezoek aan het monument",
+      "Doorrijden naar Billings, Montana"
+    ]
+  },
+  {
+    "day": 7,
+    "title": "Billings - Cody",
+    "program": [
+      "Verken Billings in de ochtend",
+      "Rijden naar Cody",
+      "Bezoek Buffalo Bill Museum"
+    ]
+  },
+  {
+    "day": 8,
+    "title": "Cody - Yellowstone NP",
+    "program": [
+      "Vertrek richting Yellowstone National Park",
+      "Bezoek Old Faithful en geisers",
+      "Wildlife spotten in de avond"
+    ]
+  },
+  {
+    "day": 9,
+    "title": "Yellowstone NP - Grand Teton NP - Jackson Hole",
+    "program": [
+      "Ochtend in Yellowstone",
+      "Rijden naar Grand Teton National Park",
+      "Inchecken in Jackson Hole"
+    ]
+  },
+  {
+    "day": 10,
+    "title": "Jackson Hole - Salt Lake City",
+    "program": [
+      "Vertrek naar Salt Lake City",
+      "Bezoek Temple Square",
+      "Diner in de stad"
+    ]
+  },
+  {
+    "day": 11,
+    "title": "Salt Lake City - Arches NP - Moab",
+    "program": [
+      "Rijden naar Arches National Park",
+      "Wandeling naar Delicate Arch",
+      "Overnachting in Moab"
+    ]
+  },
+  {
+    "day": 12,
+    "title": "Canyonlands NP",
+    "program": [
+      "Volledige dag in Canyonlands National Park",
+      "Fotografie en korte hikes",
+      "Rustavond in Moab"
+    ]
+  },
+  {
+    "day": 13,
+    "title": "Moab - Denver",
+    "program": [
+      "Terugreis naar Denver",
+      "Rustavond na lange rit"
+    ]
+  },
+  {
+    "day": 14,
+    "title": "Denver - Denver International Airport",
+    "program": [
+      "Inleveren huurauto",
+      "Vertrek vanaf Denver Airport naar Amsterdam"
+    ]
+  }
 ]
