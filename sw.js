@@ -4,12 +4,12 @@ const OFFLINE_URLS = [
   '/index.html',
   '/style.css',
   '/app.js',
-  '/routes.json', 
+  '/routes.json',
   '/manifest.json',
   '/assets/icons/icon-192.png',
-  '/assets/icons/icon-512.png'
+  '/assets/icons/icon-512.png',
+  '/assets/wildwest-bg.jpg'
 ];
-
 
 self.addEventListener('install', event => {
   event.waitUntil(
