@@ -2,28 +2,31 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Roadtrip Wild West</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roadtrip USA</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#3b3a30" />
 </head>
 <body>
   <header>
-    <h1>🤠 Wild West Roadtrip</h1>
+    <h1>Roadtrip USA</h1>
+    <p>14-daagse reis van Amsterdam naar Denver en terug</p>
   </header>
 
   <main>
-    <section id="trip-plan"></section>
+    <section id="route-list"></section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Cowboys & National Parks</p>
+    <small>&copy; 2025 Roadtrip Planner</small>
   </footer>
 
   <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </body>
 </html>
