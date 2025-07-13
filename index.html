@@ -2,31 +2,15 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Roadtrip USA</title>
-  <link rel="manifest" href="manifest.json" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roadtrip 2025</title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="theme-color" content="#3b3a30" />
+  <link rel="manifest" href="manifest.json" />
 </head>
 <body>
-  <header>
-    <h1>Roadtrip USA</h1>
-    <p>14-daagse reis van Amsterdam naar Denver en terug</p>
-  </header>
-
-  <main>
-    <section id="route-list"></section>
-  </main>
-
-  <footer>
-    <small>&copy; 2025 Roadtrip Planner</small>
-  </footer>
+  <h1>Roadtrip 2025</h1>
+  <div id="route-container"></div>
 
   <script src="app.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js');
-    }
-  </script>
 </body>
 </html>
