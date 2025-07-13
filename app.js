@@ -15,3 +15,7 @@ function renderRoute(routeData) {
     container.appendChild(div);
   });
 }
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
