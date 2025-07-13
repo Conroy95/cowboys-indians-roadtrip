@@ -1,11 +1,10 @@
 {
-  "name": "Roadtrip USA Planner",
-  "short_name": "Roadtrip USA",
-  "start_url": ".",
+  "name": "Roadtrip 2025",
+  "short_name": "Roadtrip",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#3b3a30",
-  "theme_color": "#f2a365",
-  "description": "Plan je roadtrip van Amsterdam naar Denver en terug",
+  "background_color": "#ffffff",
+  "theme_color": "#007acc",
   "icons": [
     {
       "src": "assets/icons/icon-192.png",
