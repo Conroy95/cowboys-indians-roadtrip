@@ -1,21 +1,18 @@
 fetch('routes.json')
   .then(res => res.json())
-  .then(data => renderRoute(data));
-
-function renderRoute(routeData) {
-  const container = document.getElementById('route-container');
-  routeData.forEach(day => {
-    const div = document.createElement('div');
-    div.className = 'route-day';
-
-    div.innerHTML = `
-      <a href="dag.html?id=${day.id}">
-        <h2>Dag ${day.dag}</h2>
-        <p><strong>Datum:</strong> ${day.datum}</p>
-        <p><strong>Plaats:</strong> ${day.plaats}</p>
-      </a>
-    `;
-
-    container.appendChild(div);
+  .then(data => {
+    const container = document.getElementById('trip-container');
+    data.forEach(day => {
+      const dayCard = document.createElement('div');
+      dayCard.className = 'trip-day';
+      dayCard.innerHTML = `
+        <img src="img/${day.foto}" alt="${day.plaats}">
+        <div class="info">
+          <h2>Dag ${day.dag}</h2>
+          <p><strong>Datum:</strong> ${day.datum}</p>
+          <p><strong>Plaats:</strong> ${day.plaats}</p>
+        </div>
+      `;
+      container.appendChild(dayCard);
+    });
   });
-}
