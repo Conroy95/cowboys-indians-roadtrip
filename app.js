@@ -14,6 +14,7 @@ function renderRoute(routeData) {
         <h2>Dag ${day.dag}</h2>
         <p><strong>Datum:</strong> ${day.datum}</p>
         <p><strong>Plaats:</strong> ${day.plaats}</p>
+        <p><strong>Omschrijving:</strong> ${day.omschrijving}</p>
       </a>
     `;
 
