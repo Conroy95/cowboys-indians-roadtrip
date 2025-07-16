@@ -7,15 +7,16 @@ function renderRoute(routeData) {
   routeData.forEach(day => {
     const div = document.createElement('div');
     div.className = 'route-day';
+
+    const urlDag = encodeURIComponent(day.dag);
     div.innerHTML = `
-      <h2>Dag ${day.dag}</h2>
-      <p><strong>Datum:</strong> ${day.datum}</p>
-      <p><strong>Plaats:</strong> ${day.plaats}</p>
+      <a href="dag.html?dag=${urlDag}">
+        <h2>Dag ${day.dag}</h2>
+        <p><strong>Datum:</strong> ${day.datum}</p>
+        <p><strong>Plaats:</strong> ${day.plaats}</p>
+      </a>
     `;
+
     container.appendChild(div);
   });
-}
-
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js');
 }
