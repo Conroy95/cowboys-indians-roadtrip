@@ -31,3 +31,13 @@ h1 {
 .route-day p {
   margin: 0.5rem 0 0 0;
 }
+
+.route-day a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.route-day a:hover {
+  background-color: #eef6fb;
+}
