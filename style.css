@@ -41,3 +41,25 @@ h1 {
 .route-day a:hover {
   background-color: #eef6fb;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navigation {
+  max-width: 800px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#dag-details {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
