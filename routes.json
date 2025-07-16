@@ -1,5 +1,5 @@
 [
-  { "dag": "1", "datum": "25 juli", "plaats": "Denver" },
+  { "dag": "1", "datum": "25 juli", "plaats": "Denver", "omschrijving": "Aankomst in Denver. Auto ophalen, inchecken hotel en verkenning van downtown Denver." },
   { "dag": "2 / 3", "datum": "26 / 27 juli", "plaats": "Cheyenne" },
   { "dag": "4", "datum": "28 juli", "plaats": "Hot Springs" },
   { "dag": "5", "datum": "29 juli", "plaats": "Rapid City" },
