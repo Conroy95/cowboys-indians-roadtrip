@@ -1,93 +1,15 @@
 [
-  {
-    "dag": "1 Aankomst Denver",
-    "datum": "25 juli",
-    "plaats": "Denver",
-    "omschrijving": "Aankomst in Denver. Auto ophalen, inchecken hotel en verkenning van downtown Denver.",
-    "afbeelding": "images/dag1.jpg"
-  },
-  {
-    "dag": "2 / 3",
-    "datum": "26 / 27 juli",
-    "plaats": "Cheyenne",
-    "omschrijving": "Bezoek aan Cheyenne Frontier Days, cowboyfestival en lokale markten.",
-    "afbeelding": "images/dag2.jpg"
-  },
-  {
-    "dag": "4 Naar Hot Springs",
-    "datum": "28 juli",
-    "plaats": "Hot Springs",
-    "omschrijving": "Bezoek aan Mammoth Site en relaxen in warmwaterbronnen.",
-    "afbeelding": "images/dag4.jpg"
-  }
-  {
-    "dag": "5 Naar Rapid City",
-    "datum": "29 juli",
-    "plaats": "Rapid City",
-    "omschrijving": "Bezoek aan Mammoth Site en relaxen in warmwaterbronnen.",
-    "afbeelding": "images/dag5.jpg"
-  }
-  {
-    "dag": "6",
-    "datum": "30 juli",
-    "plaats": "Badlands National Park",
-    "omschrijving": "Bezoek aan Mammoth Site en relaxen in warmwaterbronnen.",
-    "afbeelding": "images/dag6.jpg"
-  }
-  {
-    "dag": "7",
-    "datum": "31 juli",
-    "plaats": "Billings",
-    "omschrijving": "Bezoek aan Mammoth Site en relaxen in warmwaterbronnen.",
-    "afbeelding": "images/dag7.jpg"
-  }
-  {
-    "dag": "8",
-    "datum": "1 augustus",
-    "plaats": "Cody",
-    "omschrijving": "Bezoek aan Mammoth Site en relaxen in warmwaterbronnen.",
-    "afbeelding": "images/dag8.jpg"
-  }
-  {
-    "dag": "9 / 10 / 11",
-    "datum": "2 / 3 / 4 augustus",
-    "plaats": "Yellowstone National Park",
-    "omschrijving": "Bezoek aan Mammoth Site en relaxen in warmwaterbronnen.",
-    "afbeelding": "images/dag9.jpg"
-  }
-  {
-    "dag": "12 / 13",
-    "datum": "5 / 6 augustus",
-    "plaats": "Jackson Hole",
-    "omschrijving": "Bezoek aan Mammoth Site en relaxen in warmwaterbronnen.",
-    "afbeelding": "images/dag12.jpg"
-  }
-  {
-    "dag": "14 / 15",
-    "datum": "7 / 8 augustus",
-    "plaats": "Salt Lake City",
-    "omschrijving": "Bezoek aan Mammoth Site en relaxen in warmwaterbronnen.",
-    "afbeelding": "images/dag14.jpg"
-  }
-  {
-    "dag": "16 / 17",
-    "datum": "9 / 10 augustus",
-    "plaats": "Moab",
-    "omschrijving": "Bezoek aan Mammoth Site en relaxen in warmwaterbronnen.",
-    "afbeelding": "images/dag16.jpg"
-  }
-  {
-    "dag": "18 / 19",
-    "datum": "11 / 12 augustus",
-    "plaats": "Denver",
-    "omschrijving": "Bezoek aan Mammoth Site en relaxen in warmwaterbronnen.",
-    "afbeelding": "images/dag18.jpg"
-  }
-  {
-    "dag": "20",
-    "datum": "13 augustus",
-    "plaats": "Amsterdam",
-    "omschrijving": "Bezoek aan Mammoth Site en relaxen in warmwaterbronnen.",
-    "afbeelding": "images/dag20.jpg"
-  }
+  { "dag": "1", "datum": "25 juli", "plaats": "Denver", "foto": "denver.jpg" },
+  { "dag": "2 / 3", "datum": "26 / 27 juli", "plaats": "Cheyenne", "foto": "cheyenne.jpg" },
+  { "dag": "4", "datum": "28 juli", "plaats": "Hot Springs", "foto": "hotsprings.jpg" },
+  { "dag": "5", "datum": "29 juli", "plaats": "Rapid City", "foto": "rapidcity.jpg" },
+  { "dag": "6", "datum": "30 juli", "plaats": "Badlands National Park", "foto": "badlands.jpg" },
+  { "dag": "7", "datum": "31 juli", "plaats": "Billings", "foto": "billings.jpg" },
+  { "dag": "8", "datum": "1 augustus", "plaats": "Cody", "foto": "cody.jpg" },
+  { "dag": "9 / 10 / 11", "datum": "2 / 3 / 4 augustus", "plaats": "Yellowstone National Park", "foto": "yellowstone.jpg" },
+  { "dag": "12 / 13", "datum": "5 / 6 augustus", "plaats": "Jackson Hole", "foto": "jacksonhole.jpg" },
+  { "dag": "14 / 15", "datum": "7 / 8 augustus", "plaats": "Salt Lake City", "foto": "saltlakecity.jpg" },
+  { "dag": "16 / 17", "datum": "9 / 10 augustus", "plaats": "Moab", "foto": "moab.jpg" },
+  { "dag": "18 / 19", "datum": "11 / 12 augustus", "plaats": "Denver", "foto": "denver.jpg" },
+  { "dag": "20", "datum": "13 augustus", "plaats": "Amsterdam", "foto": "amsterdam.jpg" }
 ]
