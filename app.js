@@ -8,9 +8,8 @@ function renderRoute(routeData) {
     const div = document.createElement('div');
     div.className = 'route-day';
 
-    const urlDag = encodeURIComponent(day.dag);
     div.innerHTML = `
-      <a href="dag.html?dag=${urlDag}">
+      <a href="dag.html?id=${day.id}">
         <h2>Dag ${day.dag}</h2>
         <p><strong>Datum:</strong> ${day.datum}</p>
         <p><strong>Plaats:</strong> ${day.plaats}</p>
