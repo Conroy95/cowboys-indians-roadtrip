@@ -14,15 +14,17 @@ const trips = [
   {dagen: [20], datum: ['13 augustus'], plaats: 'Amsterdam', foto: 'amsterdam.png'},
 ];
 
+const programmaPerDag = {
+  1: ['Aankomst in Denver', 'Huurauto ophalen', 'Hotel inchecken', 'Dinner in downtown'],
+  2: ['Rit naar Cheyenne', 'Bezoek State Capitol', 'Lunch bij The Albany', 'Overnachting'],
+  3: ['Dagtocht naar Fort Laramie', 'Wandelen in Curt Gowdy State Park'],
+  4: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  // Voeg hier dag 5 t/m 20 toe
+};
+
 // Simpel programma per dag
 function getProgramma(dag) {
-  // Voorbeeld programma, kan uitgebreid worden per dag
-  return [
-    'Eerst eten',
-    'Tanken',
-    'Bezienswaardigheid bezoeken',
-    'Naar hotel',
-  ];
+  return programmaPerDag[dag] || ['Programma nog niet ingevoerd voor deze dag.'];
 }
 
 function getQueryParam(param) {
