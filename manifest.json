@@ -1,10 +1,10 @@
 {
-  "name": "Roadtrip 2025",
+  "name": "Roadtrip Web App",
   "short_name": "Roadtrip",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#004d7a",
-  "theme_color": "#004d7a",
+  "background_color": "#004d40",
+  "theme_color": "#00796b",
   "icons": [
     {
       "src": "assets/icons/icon-192.png",

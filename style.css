@@ -1,86 +1,109 @@
-/* Reset & basic */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
+body, html {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  background: #f0f4f8;
-  color: #333;
 }
 
-header {
-  background: #004d7a;
+header nav {
+  background-color: #004d40;
   color: white;
-  padding: 1rem;
-  text-align: center;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+header nav button {
+  background-color: #00796b;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header nav button:disabled {
+  background-color: #004d40;
+  cursor: not-allowed;
 }
 
 main {
-  flex: 1;
-  padding: 1rem;
-  max-width: 600px;
+  flex-grow: 1;
+  padding: 20px;
+  max-width: 900px;
   margin: auto;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
 footer {
-  background: #004d7a;
+  background-color: #004d40;
   color: white;
-  padding: 1rem;
   text-align: center;
+  padding: 12px 0;
   position: sticky;
   bottom: 0;
   width: 100%;
-  font-size: 0.9rem;
 }
 
-ul {
-  list-style: none;
-  margin-top: 1rem;
+h1 {
+  margin-bottom: 20px;
+  color: #00796b;
 }
 
-ul#programma li {
-  background: white;
-  margin-bottom: 0.7rem;
-  padding: 0.8rem 1rem;
-  border-radius: 6px;
-  box-shadow: 0 0 4px rgba(0,0,0,0.1);
-  font-weight: 600;
+.dag-container {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
 }
 
-img {
+.dag-container img {
   max-width: 100%;
-  border-radius: 8px;
-  margin: 1rem 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
+.programma-list {
+  list-style: none;
+  margin-top: 15px;
+  text-align: left;
+  font-size: 1.1em;
 }
 
-button {
-  background: #007acc;
-  color: white;
-  border: none;
-  padding: 0.7rem 1.2rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+.programma-list li {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
 }
 
-button:hover {
-  background: #005f99;
-}
-
-h1, h2 {
-  margin-bottom: 0.5rem;
+.programma-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #00796b;
+  font-weight: bold;
 }

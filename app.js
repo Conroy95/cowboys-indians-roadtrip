@@ -1,34 +1,60 @@
-// Laden routes.json en tonen overzicht met links naar dag.html?dag=#
+const trips = [
+  {dagen: [1], datum: ['25 juli'], plaats: 'Denver', foto: 'denver.jpg'},
+  {dagen: [2,3], datum: ['26 juli','27 juli'], plaats: 'Cheyenne', foto: 'cheyenne.jpg'},
+  {dagen: [4], datum: ['28 juli'], plaats: 'Hot Springs', foto: 'hotsprings.jpg'},
+  {dagen: [5], datum: ['29 juli'], plaats: 'Rapid City', foto: 'rapidcity.jpg'},
+  {dagen: [6], datum: ['30 juli'], plaats: 'Badlands National Park', foto: 'badlands.jpg'},
+  {dagen: [7], datum: ['31 juli'], plaats: 'Billings', foto: 'billings.jpg'},
+  {dagen: [8], datum: ['1 augustus'], plaats: 'Cody', foto: 'cody.jpg'},
+  {dagen: [9,10,11], datum: ['2 augustus','3 augustus','4 augustus'], plaats: 'Yellowstone National Park', foto: 'yellowstone.jpg'},
+  {dagen: [12,13], datum: ['5 augustus','6 augustus'], plaats: 'Jackson Hole', foto: 'jacksonhole.jpg'},
+  {dagen: [14,15], datum: ['7 augustus','8 augustus'], plaats: 'Salt Lake City', foto: 'saltlakecity.jpg'},
+  {dagen: [16,17], datum: ['9 augustus','10 augustus'], plaats: 'Moab', foto: 'moab.jpg'},
+  {dagen: [18,19], datum: ['11 augustus','12 augustus'], plaats: 'Denver', foto: 'denver.jpg'},
+  {dagen: [20], datum: ['13 augustus'], plaats: 'Amsterdam', foto: 'amsterdam.jpg'},
+];
 
-async function loadRoutes() {
-  const response = await fetch('routes.json');
-  const dagen = await response.json();
+// Toon alle dagen op homepage met foto, klikbaar naar dagpagina (bijv ?dag=1)
+const gallery = document.getElementById('gallery');
 
-  const dagList = document.getElementById('dagList');
-
-  // Unieke dagen tonen (zonder duplicaten bij meerdere dagen op zelfde plaats)
-  const uniqueDagen = [];
-
-  // Omdat dag 2/3 samen zijn, tonen we dag per nummer, maar dag 2 en 3 apart.
-  for (const dag of dagen) {
-    uniqueDagen.push(dag);
-  }
-
-  uniqueDagen.forEach(dag => {
-    const li = document.createElement('li');
-    li.innerHTML = `
-      <a href="dag.html?dag=${dag.dag}">
-        Dag ${dag.dag} - ${dag.datum} - ${dag.plaats}
-      </a>
-    `;
-    dagList.appendChild(li);
+trips.forEach((trip) => {
+  const dayText = trip.dagen.length > 1 ? `Dag ${trip.dagen.join(' / ')}` : `Dag ${trip.dagen[0]}`;
+  const dates = trip.datum.join(' / ');
+  const div = document.createElement('div');
+  div.classList.add('dag-preview');
+  div.innerHTML = `
+    <img src="img/${trip.foto}" alt="${trip.plaats}" loading="lazy" />
+    <h3>${dayText} - ${trip.plaats}</h3>
+    <p>${dates}</p>
+  `;
+  div.style.cursor = "pointer";
+  div.addEventListener('click', () => {
+    // Naar dag.html met dag eerste dag van trip
+    location.href = `dag.html?dag=${trip.dagen[0]}`;
   });
-}
-
-window.addEventListener('load', () => {
-  loadRoutes();
-
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js');
-  }
+  gallery.appendChild(div);
 });
+
+// Navigatieknoppen op homepage: alleen home (huidig), next dag=dag1 pagina, geen prev
+const homeBtn = document.getElementById('homeBtn');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+homeBtn.disabled = true; // al op home
+
+prevBtn.disabled = true; // geen prev op home
+
+nextBtn.addEventListener('click', () => {
+  location.href = 'dag.html?dag=1';
+});
+
+homeBtn.addEventListener('click', () => {
+  location.href = 'index.html';
+});
+
+// Register service worker voor caching
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(() => console.log('Service Worker geregistreerd'))
+    .catch(err => console.log('Service Worker fout', err));
+}

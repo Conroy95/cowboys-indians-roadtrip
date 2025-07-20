@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dag programma</title>
-  <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Roadtrip Dag</title>
+<link rel="manifest" href="manifest.json" />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="assets/icons/icon-192.png" />
 </head>
 <body>
-  <header>
-    <h1 id="plaats"></h1>
-    <p id="datum"></p>
-  </header>
+<header>
+  <nav>
+    <button id="homeBtn">Home</button>
+    <button id="prevBtn">Vorige</button>
+    <button id="nextBtn">Volgende</button>
+  </nav>
+</header>
 
-  <main>
-    <img id="foto" src="" alt="" />
-    <ul id="programma">
-      <!-- Dagprogramma komt hier -->
-    </ul>
+<main id="content">
+  <!-- Dag programma wordt hier geladen -->
+</main>
 
-    <nav>
-      <button id="prevBtn">&larr; Vorige</button>
-      <button id="nextBtn">Volgende &rarr;</button>
-    </nav>
-  </main>
+<footer>
+  <p>© 2025 Roadtrip App</p>
+</footer>
 
-  <footer>
-    &copy; 2025 Roadtrip
-  </footer>
-
-  <script src="dag.js"></script>
+<script src="dag.js"></script>
 </body>
 </html>

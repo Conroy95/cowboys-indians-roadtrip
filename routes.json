@@ -1,22 +1,4 @@
-[
-  {"dag": 1, "datum": "25 juli", "plaats": "Denver", "foto": "denver.jpg"},
-  {"dag": 2, "datum": "26 juli", "plaats": "Cheyenne", "foto": "cheyenne.jpg"},
-  {"dag": 3, "datum": "27 juli", "plaats": "Cheyenne", "foto": "cheyenne.jpg"},
-  {"dag": 4, "datum": "28 juli", "plaats": "Hot Springs", "foto": "hotsprings.jpg"},
-  {"dag": 5, "datum": "29 juli", "plaats": "Rapid City", "foto": "rapidcity.jpg"},
-  {"dag": 6, "datum": "30 juli", "plaats": "Badlands National Park", "foto": "badlands.jpg"},
-  {"dag": 7, "datum": "31 juli", "plaats": "Billings", "foto": "billings.jpg"},
-  {"dag": 8, "datum": "1 augustus", "plaats": "Cody", "foto": "cody.jpg"},
-  {"dag": 9, "datum": "2 augustus", "plaats": "Yellowstone National Park", "foto": "yellowstone.jpg"},
-  {"dag": 10, "datum": "3 augustus", "plaats": "Yellowstone National Park", "foto": "yellowstone.jpg"},
-  {"dag": 11, "datum": "4 augustus", "plaats": "Yellowstone National Park", "foto": "yellowstone.jpg"},
-  {"dag": 12, "datum": "5 augustus", "plaats": "Jackson Hole", "foto": "jacksonhole.jpg"},
-  {"dag": 13, "datum": "6 augustus", "plaats": "Jackson Hole", "foto": "jacksonhole.jpg"},
-  {"dag": 14, "datum": "7 augustus", "plaats": "Salt Lake City", "foto": "saltlakecity.jpg"},
-  {"dag": 15, "datum": "8 augustus", "plaats": "Salt Lake City", "foto": "saltlakecity.jpg"},
-  {"dag": 16, "datum": "9 augustus", "plaats": "Moab", "foto": "moab.jpg"},
-  {"dag": 17, "datum": "10 augustus", "plaats": "Moab", "foto": "moab.jpg"},
-  {"dag": 18, "datum": "11 augustus", "plaats": "Denver", "foto": "denver.jpg"},
-  {"dag": 19, "datum": "12 augustus", "plaats": "Denver", "foto": "denver.jpg"},
-  {"dag": 20, "datum": "13 augustus", "plaats": "Amsterdam", "foto": "amsterdam.jpg"}
-]
+{
+  "/": "index.html",
+  "/dag/:dag": "dag.html"
+}

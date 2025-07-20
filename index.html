@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Roadtrip 2025</title>
-  <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Roadtrip App</title>
+<link rel="manifest" href="manifest.json" />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="assets/icons/icon-192.png" />
 </head>
 <body>
-  <header>
-    <h1>Roadtrip 2025</h1>
-  </header>
+<header>
+  <nav>
+    <button id="homeBtn">Home</button>
+    <button id="prevBtn" disabled>Vorige</button>
+    <button id="nextBtn">Volgende</button>
+  </nav>
+</header>
 
-  <main>
-    <h2>Overzicht Dagen</h2>
-    <ul id="dagList"></ul>
-  </main>
+<main id="content">
+  <h1>Roadtrip Overzicht</h1>
+  <div class="gallery" id="gallery"></div>
+</main>
 
-  <footer>
-    &copy; 2025 Roadtrip
-  </footer>
+<footer>
+  <p>© 2025 Roadtrip App</p>
+</footer>
 
-  <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
