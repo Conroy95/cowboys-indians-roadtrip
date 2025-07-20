@@ -23,3 +23,16 @@ self.addEventListener('fetch', event => {
       .then(response => response || fetch(event.request))
   );
 });
+
+return cache.addAll([
+  '/',
+  '/index.html',
+  '/style.css',
+  '/app.js',
+  '/manifest.json',
+  '/routes.json',
+  '/img/denver.jpg',
+  '/img/cheyenne.jpg',
+  '/img/hotsprings.jpg',
+  // ... alle andere foto's
+]);
