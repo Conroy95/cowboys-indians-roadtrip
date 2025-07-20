@@ -23,7 +23,7 @@ const trips = [
 
 const programmaPerDag = {
   1: ['Aankomst in Denver', 'Huurauto ophalen', 'Hotel inchecken', 'Dinner in downtown'],
-  2: ['Rit naar Cheyenne', 'Bezoek State Capitol', 'Lunch bij The Albany', 'Overnachting'],
+  2: ['Rit naar Cheyenne', 'Bezoek State Capitol', 'Lunch bij The Albany', 'Cowboy Boots Statues', 'Overnachting'],
   3: ['Dagtocht naar Fort Laramie', 'Wandelen in Curt Gowdy State Park'],
   4: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
   5: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
