@@ -1,25 +1,34 @@
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('routes.json')
-    .then(res => res.json())
-    .then(data => {
-      const container = document.getElementById('main-content');
+// Laden routes.json en tonen overzicht met links naar dag.html?dag=#
 
-      data.forEach((route, index) => {
-        const link = document.createElement('a');
-        link.href = `dag.html?dag=${encodeURIComponent(route.dag)}`;
-        link.classList.add('card');
+async function loadRoutes() {
+  const response = await fetch('routes.json');
+  const dagen = await response.json();
 
-        link.innerHTML = `
-          <img src="${route.foto}" alt="${route.plaats}" loading="lazy">
-          <div class="card-content">
-            <h2>Dag ${route.dag}</h2>
-            <p><strong>Datum:</strong> ${route.datum}</p>
-            <p><strong>Plaats:</strong> ${route.plaats}</p>
-          </div>
-        `;
+  const dagList = document.getElementById('dagList');
 
-        container.appendChild(link);
-      });
-    })
-    .catch(err => console.error('Fout bij laden routes:', err));
+  // Unieke dagen tonen (zonder duplicaten bij meerdere dagen op zelfde plaats)
+  const uniqueDagen = [];
+
+  // Omdat dag 2/3 samen zijn, tonen we dag per nummer, maar dag 2 en 3 apart.
+  for (const dag of dagen) {
+    uniqueDagen.push(dag);
+  }
+
+  uniqueDagen.forEach(dag => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <a href="dag.html?dag=${dag.dag}">
+        Dag ${dag.dag} - ${dag.datum} - ${dag.plaats}
+      </a>
+    `;
+    dagList.appendChild(li);
+  });
+}
+
+window.addEventListener('load', () => {
+  loadRoutes();
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
 });

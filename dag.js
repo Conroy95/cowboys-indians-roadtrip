@@ -1,21 +1,75 @@
-document.addEventListener('DOMContentLoaded', () => {
+// Haalt dagnummer uit URL, toont info, programma en navigatieknoppen
+
+async function getDagNummer() {
   const params = new URLSearchParams(window.location.search);
-  const dagParam = params.get('dag');
+  return parseInt(params.get('dag'));
+}
 
-  fetch('routes.json')
-    .then(res => res.json())
-    .then(data => {
-      const dagData = data.find(d => d.dag === dagParam);
-      if (!dagData) {
-        document.getElementById('main').innerHTML = '<p>Dag niet gevonden.</p>';
-        return;
-      }
+async function loadRoutes() {
+  const response = await fetch('routes.json');
+  return response.json();
+}
 
-      document.getElementById('dag-titel').textContent = `Dag ${dagData.dag}`;
-      document.getElementById('dag-foto').src = dagData.foto;
-      document.getElementById('dag-foto').alt = dagData.plaats;
-      document.getElementById('dag-datum').textContent = dagData.datum;
-      document.getElementById('dag-plaats').textContent = dagData.plaats;
-    })
-    .catch(err => console.error('Fout bij laden van daggegevens:', err));
-});
+function toonProgramma() {
+  // Voorbeeld programma
+  return [
+    "Eerst eten",
+    "Tanken",
+    "Bezienswaardigheid bezoeken",
+    "Naar hotel"
+  ];
+}
+
+function updateNavigation(currentDag, maxDag) {
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  if (currentDag <= 1) {
+    prevBtn.disabled = true;
+  } else {
+    prevBtn.disabled = false;
+    prevBtn.onclick = () => {
+      window.location.href = `dag.html?dag=${currentDag - 1}`;
+    };
+  }
+
+  if (currentDag >= maxDag) {
+    nextBtn.disabled = true;
+  } else {
+    nextBtn.disabled = false;
+    nextBtn.onclick = () => {
+      window.location.href = `dag.html?dag=${currentDag + 1}`;
+    };
+  }
+}
+
+async function main() {
+  const dagNummer = await getDagNummer();
+  const routes = await loadRoutes();
+
+  const dagData = routes.find(d => d.dag === dagNummer);
+
+  if (!dagData) {
+    document.body.innerHTML = "<p>Dag niet gevonden</p>";
+    return;
+  }
+
+  document.getElementById('plaats').textContent = dagData.plaats;
+  document.getElementById('datum').textContent = dagData.datum;
+
+  const foto = document.getElementById('foto');
+  foto.src = `img/${dagData.foto}`;
+  foto.alt = `Foto van ${dagData.plaats}`;
+
+  const programmaList = document.getElementById('programma');
+  programmaList.innerHTML = '';
+  toonProgramma().forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    programmaList.appendChild(li);
+  });
+
+  updateNavigation(dagNummer, routes.length);
+}
+
+window.addEventListener('load', main);
