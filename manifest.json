@@ -3,8 +3,8 @@
   "short_name": "Roadtrip",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#004d40",
-  "theme_color": "#00796b",
+  "background_color": "#034a99",
+  "theme_color": "#176fd1",
   "icons": [
     {
       "src": "assets/icons/icon-192.png",
