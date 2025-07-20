@@ -26,7 +26,22 @@ const programmaPerDag = {
   2: ['Rit naar Cheyenne', 'Bezoek State Capitol', 'Lunch bij The Albany', 'Overnachting'],
   3: ['Dagtocht naar Fort Laramie', 'Wandelen in Curt Gowdy State Park'],
   4: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  // Voeg hier dag 5 t/m 20 toe
+  5: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  6: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  7: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  8: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  9: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  10: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  11: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  12: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  13: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  14: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  15: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  16: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  17: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  18: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  19: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  20: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling']
 };
 
 // Simpel programma per dag
