@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dagoverzicht</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dag Overzicht</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/icon-192.png">
 </head>
 <body>
-  <div class="navigation">
-    <a href="index.html">← Terug naar overzicht</a>
-    <div id="dag-nav"></div>
-  </div>
-
-  <div id="dag-details"></div>
-
+  <header>
+    <h1 id="dag-titel">Dag ...</h1>
+  </header>
+  <main>
+    <div class="card">
+      <img id="dag-foto" src="" alt="Dag Foto">
+      <div class="card-content">
+        <p><strong>Datum:</strong> <span id="dag-datum"></span></p>
+        <p><strong>Plaats:</strong> <span id="dag-plaats"></span></p>
+        <p id="dag-extra">Activiteiten en hotel info hier...</p>
+      </div>
+    </div>
+    <p><a href="index.html">&#8592; Terug naar overzicht</a></p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Roadtrip</p>
+  </footer>
   <script src="dag.js"></script>
 </body>
 </html>

@@ -1,38 +1,36 @@
-const CACHE_NAME = 'roadtrip-cache-v1';
-const FILES_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/app.js',
-  '/routes.json',
-  '/manifest.json',
-  '/assets/icons/icon-192.png',
-  '/assets/icons/icon-512.png'
+const CACHE_NAME = 'roadtrip-v1';
+const STATIC_ASSETS = [
+  'index.html',
+  'style.css',
+  'app.js',
+  'dag.html',
+  'dag.js',
+  'routes.json',
+  'manifest.json',
+  'assets/icons/icon-192.png',
+  'assets/icons/icon-512.png',
+  'img/denver.jpg',
+  'img/cheyenne.jpg',
+  'img/hotsprings.jpg',
+  'img/rapidcity.jpg',
+  'img/badlands.jpg',
+  'img/billings.jpg',
+  'img/cody.jpg',
+  'img/yellowstone.jpg',
+  'img/jacksonhole.jpg',
+  'img/saltlakecity.jpg',
+  'img/moab.jpg',
+  'img/amsterdam.jpg'
 ];
 
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(FILES_TO_CACHE))
+self.addEventListener('install', e => {
+  e.waitUntil(
+    caches.open(CACHE_NAME).then(cache => cache.addAll(STATIC_ASSETS))
   );
 });
 
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => response || fetch(event.request))
+self.addEventListener('fetch', e => {
+  e.respondWith(
+    caches.match(e.request).then(response => response || fetch(e.request))
   );
 });
-
-return cache.addAll([
-  '/',
-  '/index.html',
-  '/style.css',
-  '/app.js',
-  '/manifest.json',
-  '/routes.json',
-  '/img/denver.jpg',
-  '/img/cheyenne.jpg',
-  '/img/hotsprings.jpg',
-  // ... alle andere foto's
-]);
