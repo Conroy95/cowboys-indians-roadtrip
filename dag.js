@@ -41,7 +41,7 @@ const programmaPerDag = {
   17: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
   18: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
   19: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  20: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling']
+  20: ['Vertrek naar Amsterdam']
 };
 
 // Simpel programma per dag
