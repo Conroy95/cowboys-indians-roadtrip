@@ -45,10 +45,10 @@ const programmaPerDag = {
 };
 
 const listPerDag = {
-  1: ['Aankomst in Denver', 'Huurauto ophalen', 'Hotel inchecken', 'Dinner in downtown'],
-  2: ['Rit naar Cheyenne', 'Bezoek State Capitol', 'Lunch bij The Albany', 'Cowboy Boots Statues', 'Overnachting'],
-  3: ['Dagtocht naar Fort Laramie', 'Wandelen in Curt Gowdy State Park'],
-  4: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
+  1: ['Info'],
+  2: ['Info'],
+  3: ['Info'],
+  4: ['Info'],
   5: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
   6: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
   7: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
