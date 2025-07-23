@@ -97,9 +97,9 @@ if (!dagNum || isNaN(dagNum)) {
         <p><em>${datumText}</em></p>
         <img src="img/${trip.foto}" alt="${trip.plaats}" />
         <h2>Info</h2>
-        <ul class="info-list">
+        <p class="info-list">
           ${programma.map(item => `<li>${item}</li>`).join('')}
-        </ul>
+        </p>
         <h2>Programma</h2>
         <ul class="programma-list">
           ${programma.map(item => `<li>${item}</li>`).join('')}
