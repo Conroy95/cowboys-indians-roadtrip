@@ -21,7 +21,7 @@ const trips = [
   {dagen: [20], datum: ['13 augustus'], plaats: 'Amsterdam', foto: 'amsterdam.png'},
 ];
 
-const infoPerDag = {
+const info = {
   1: ['Info'],
   2: ['Info'],
   3: ['Info'],
@@ -97,7 +97,7 @@ if (!dagNum || isNaN(dagNum)) {
         <p><em>${datumText}</em></p>
         <img src="img/${trip.foto}" alt="${trip.plaats}" />
         <h2>Info</h2>
-        <ul class="info-list">
+        <ul class="info">
           ${programma.map(item => `<li>${item}</li>`).join('')}
         </ul>
         <h2>Programma</h2>
