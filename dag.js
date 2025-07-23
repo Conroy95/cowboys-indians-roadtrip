@@ -44,29 +44,6 @@ const programmaPerDag = {
   20: ['Vertrek naar Amsterdam']
 };
 
-const listPerDag = {
-  1: ['Info'],
-  2: ['Info'],
-  3: ['Info'],
-  4: ['Info'],
-  5: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  6: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  7: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  8: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  9: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  10: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  11: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  12: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  13: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  14: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  15: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  16: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  17: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  18: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  19: ['Vertrek naar Hot Springs', 'Bezoek Mammoth Site', 'Avondwandeling'],
-  20: ['Vertrek naar Amsterdam']
-};
-
 // Simpel programma per dag
 function getProgramma(dag) {
   return programmaPerDag[dag] || ['Programma nog niet ingevoerd voor deze dag.'];
@@ -96,10 +73,6 @@ if (!dagNum || isNaN(dagNum)) {
         <h1>${dagText} - ${trip.plaats}</h1>
         <p><em>${datumText}</em></p>
         <img src="img/${trip.foto}" alt="${trip.plaats}" />
-        <h2>Info</h2>
-        <p class="info-list">
-          ${programma.map(item => `<li>${item}</li>`).join('')}
-        </p>
         <h2>Programma</h2>
         <ul class="programma-list">
           ${programma.map(item => `<li>${item}</li>`).join('')}
