@@ -101,7 +101,7 @@ h1 {
 }
 
 .programma-list li::before {
-  content: "✓";
+  content: "-";
   position: absolute;
   left: 0;
   color: #21a0f5;
