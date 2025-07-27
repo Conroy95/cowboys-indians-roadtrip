@@ -107,3 +107,9 @@ h1 {
   color: #21a0f5;
   font-weight: bold;
 }
+
+.dag-info {
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
