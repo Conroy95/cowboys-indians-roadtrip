@@ -38,7 +38,7 @@ const programmaPerDag = {
   ],
   4: [
     { titel: 'Aankomst Hot Springs', coords: { lat: 43.43165, lng: -103.47436 } },
-    { titel: 'Bezoek Mammoth Site', coords: { lat: 43.4643, lng: -103.4575 } }
+    { titel: 'Bezoek Mammoth Site', coords: { lat: 43.4247, lng: -103.4835 } }
   ],
   5: [
     { titel: 'Rapid City centrum', coords: { lat: 44.0805, lng: -103.2310 } },
