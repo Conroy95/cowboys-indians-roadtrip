@@ -121,8 +121,35 @@ const infoPerDag = {
   20: "Terugvlucht naar Amsterdam. Lever de auto in en zorg dat je op tijd op het vliegveld bent. Goede reis!"
 };
 
+const hotelPerDag = {
+  1: "Vandaag kom je aan in Denver, Colorado. Haal je huurauto op en neem de tijd om bij te komen van de vlucht. Een korte wandeling in Downtown of een bezoek aan Union Station is ideaal.",
+  2: "Vertrek richting Cheyenne, de hoofdstad van Wyoming. Bezoek het Wyoming State Capitol en ontdek de westerncultuur. Lunchtip: <a href='https://www.thealbany.com' target='_blank'>The Albany</a>.",
+  3: "Trek eropuit voor een dagtocht naar Fort Laramie of wandel in het mooie Curt Gowdy State Park. Cheyenne heeft ook een mooi spoorwegmuseum.",
+  4: "Vandaag rijd je naar Hot Springs, South Dakota. Bezoek de Mammoth Site, een unieke opgraving met honderden mammoetfossielen.",
+  5: "Je komt aan in Rapid City, een gezellige stad met een historisch centrum. Bezoek eventueel het nabijgelegen Mount Rushmore of het Crazy Horse Memorial.",
+  6: "Vandaag verken je Badlands National Park: surrealistische rotsformaties, prairiehonden en prachtige uitzichtpunten. Zorg voor voldoende water en zonnebrand.",
+  7: "Een reisdag richting Billings, Montana. Onderweg kun je stoppen bij Wall Drug of het historische stadje Deadwood. In Billings is Pictograph Cave State Park een aanrader.",
+  8: "Van Billings naar Cody, waar het wildwestgevoel centraal staat. Bezoek het Buffalo Bill Center of the West en maak eventueel een rodeo mee.",
+  9: "Vandaag betreed je Yellowstone National Park: geisers, bizons en spectaculaire natuur. Begin met de zuidelijke loop van het park (Old Faithful, Grand Prismatic Spring).",
+  10: "Vervolg je ontdekkingstocht door Yellowstone. De noordelijke regio heeft onder andere de Mammoth Hot Springs en volop wildlife.",
+  11: "Laatste dag in Yellowstone. Breng eventueel een bezoek aan de Grand Canyon of the Yellowstone en neem rustig de tijd om van het park te genieten.",
+  12: "Je rijdt vandaag naar Jackson Hole, een schilderachtig stadje in de bergen. Geniet van de galerijen, cowboy-bars en lokale sfeer.",
+  13: "Verken Grand Teton National Park met zijn ruige bergtoppen en meren. Mooie wandelingen zijn onder andere Jenny Lake en Taggart Lake.",
+  14: "Op weg naar Salt Lake City. Onderweg zie je het landschap langzaam veranderen. Salt Lake City biedt tempels, parken en goede restaurants.",
+  15: "Verken Salt Lake City: bezoek Temple Square, het Utah State Capitol en wandel in het Liberty Park.",
+  16: "Vertrek naar Moab, de poort tot Arches en Canyonlands National Park. De rit zelf is al indrukwekkend. Geniet van de zonsondergang bij Dead Horse Point.",
+  17: "Vandaag volop genieten van Arches National Park: natuurlijke stenen bogen, rode rotsformaties en korte wandelingen.",
+  18: "Rit terug richting Denver. Onderweg kun je eventueel stoppen in Glenwood Springs of Vail voor een korte pauze.",
+  19: "Laatste volle dag in Denver. Bezoek het Denver Art Museum, relax in het City Park of ga shoppen in Cherry Creek.",
+  20: "Terugvlucht naar Amsterdam. Lever de auto in en zorg dat je op tijd op het vliegveld bent. Goede reis!"
+};
+
 function getProgramma(dag) {
   return programmaPerDag[dag] || [];
+}
+
+function getHotel(dag) {
+  return HotelPerDag[dag] || [];
 }
 
 function getQueryParam(param) {
@@ -152,6 +179,8 @@ if (!dagNum || isNaN(dagNum)) {
         <img src="img/${trip.foto}" alt="${trip.plaats}" />
         <h2>Informatie</h2>
         <p class="dag-info" style="margin-bottom: 2em;">${info}</p>
+        <h2>Hotel</h2>
+        <p class="dag-hotel" style="margin-bottom: 2em;">${info}</p>
         <h2>Programma</h2>
         <ul class="programma-list">
           ${programma.map(item => {
@@ -198,6 +227,7 @@ if ('serviceWorker' in navigator) {
     .then(() => console.log('Service Worker geregistreerd'))
     .catch(err => console.log('Service Worker fout', err));
 }
+
 
 
 
