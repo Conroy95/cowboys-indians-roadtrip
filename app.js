@@ -1,5 +1,5 @@
 const trips = [
-  {dagen: [1], datum: ['27 Juni'], plaats: 'Denver', foto: 'denver.png'},
+  {dagen: [1], datum: ['27 Juni - 28 Juni'], plaats: 'Denver', foto: 'denver.png'},
   {dagen: [2], datum: ['28 Juni'], plaats: 'Cheyenne', foto: 'cheyenne.png'},
   {dagen: [3], datum: ['29 Juni'], plaats: 'Cheyenne', foto: 'cheyenne.png'},
   {dagen: [4], datum: ['30 Juni'], plaats: 'Hot Springs', foto: 'hotsprings.png'},
@@ -66,4 +66,5 @@ if ('serviceWorker' in navigator) {
     .then(() => console.log('Service Worker geregistreerd'))
     .catch(err => console.log('Service Worker fout', err));
 }
+
 
