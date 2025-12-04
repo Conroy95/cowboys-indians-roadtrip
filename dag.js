@@ -1,24 +1,25 @@
 const trips = [
-  {dagen: [1], datum: ['25 juli'], plaats: 'Denver', foto: 'denver.png'},
-  {dagen: [2], datum: ['26 juli'], plaats: 'Cheyenne', foto: 'cheyenne.png'},
-  {dagen: [3], datum: ['27 juli'], plaats: 'Cheyenne', foto: 'cheyenne.png'},
-  {dagen: [4], datum: ['28 juli'], plaats: 'Hot Springs', foto: 'hotsprings.png'},
-  {dagen: [5], datum: ['29 juli'], plaats: 'Rapid City', foto: 'rapidcity.png'},
-  {dagen: [6], datum: ['30 juli'], plaats: 'Badlands National Park', foto: 'badlands.png'},
-  {dagen: [7], datum: ['31 juli'], plaats: 'Billings', foto: 'billings.png'},
-  {dagen: [8], datum: ['1 augustus'], plaats: 'Cody', foto: 'cody.png'},
-  {dagen: [9], datum: ['2 augustus'], plaats: 'Yellowstone National Park', foto: 'yellowstone.png'},
-  {dagen: [10], datum: ['3 augustus'], plaats: 'Yellowstone National Park', foto: 'yellowstone.png'},
-  {dagen: [11], datum: ['4 augustus'], plaats: 'Yellowstone National Park', foto: 'yellowstone.png'},
-  {dagen: [12], datum: ['5 augustus'], plaats: 'Jackson Hole', foto: 'jacksonhole.png'},
-  {dagen: [13], datum: ['6 augustus'], plaats: 'Jackson Hole', foto: 'jacksonhole.png'},
-  {dagen: [14], datum: ['7 augustus'], plaats: 'Salt Lake City', foto: 'saltlakecity.png'},
-  {dagen: [15], datum: ['8 augustus'], plaats: 'Salt Lake City', foto: 'saltlakecity.png'},
-  {dagen: [16], datum: ['9 augustus'], plaats: 'Moab', foto: 'moab.png'},
-  {dagen: [17], datum: ['10 augustus'], plaats: 'Moab', foto: 'moab.png'},
-  {dagen: [18], datum: ['11 augustus'], plaats: 'Denver', foto: 'denver.png'},
-  {dagen: [19], datum: ['12 augustus'], plaats: 'Denver', foto: 'denver.png'},
-  {dagen: [20], datum: ['13 augustus'], plaats: 'Amsterdam', foto: 'amsterdam.png'},
+  {dagen: [1], datum: ['27 Juni'], plaats: 'Denver', foto: 'denver.png'},
+  {dagen: [2], datum: ['28 Juni'], plaats: 'Cheyenne', foto: 'cheyenne.png'},
+  {dagen: [3], datum: ['29 Juni'], plaats: 'Cheyenne', foto: 'cheyenne.png'},
+  {dagen: [4], datum: ['30 Juni'], plaats: 'Hot Springs', foto: 'hotsprings.png'},
+  {dagen: [5], datum: ['1 Juli'], plaats: 'Rapid City', foto: 'rapidcity.png'},
+  {dagen: [6], datum: ['2 Juli'], plaats: 'Badlands National Park', foto: 'badlands.png'},
+  {dagen: [7], datum: ['3 Juli'], plaats: 'Billings', foto: 'billings.png'},
+  {dagen: [8], datum: ['4 Juli'], plaats: 'Cody', foto: 'cody.png'},
+  {dagen: [9], datum: ['5 Juli'], plaats: 'Yellowstone National Park', foto: 'yellowstone.png'},
+  {dagen: [10], datum: ['6 Juli'], plaats: 'Yellowstone National Park', foto: 'yellowstone.png'},
+  {dagen: [11], datum: ['7 Juli'], plaats: 'Yellowstone National Park', foto: 'yellowstone.png'},
+  {dagen: [12], datum: ['8 Juli'], plaats: 'Jackson Hole', foto: 'jacksonhole.png'},
+  {dagen: [13], datum: ['9 Juli'], plaats: 'Jackson Hole', foto: 'jacksonhole.png'},
+  {dagen: [14], datum: ['10 Juli'], plaats: 'Salt Lake City', foto: 'saltlakecity.png'},
+  {dagen: [15], datum: ['11 Juli'], plaats: 'Salt Lake City', foto: 'saltlakecity.png'},
+  {dagen: [16], datum: ['12 Juli'], plaats: 'Moab', foto: 'moab.png'},
+  {dagen: [17], datum: ['13 Juli'], plaats: 'Moab', foto: 'moab.png'},
+  {dagen: [18], datum: ['14 Juli'], plaats: 'Denver', foto: 'denver.png'},
+  {dagen: [19], datum: ['15 Juli'], plaats: 'Denver', foto: 'denver.png'},
+  {dagen: [20], datum: ['16 Juli'], plaats: 'Amsterdam', foto: 'amsterdam.png'},
+  {dagen: [21], datum: ['17 Juli'], plaats: 'Amsterdam', foto: 'amsterdam.png'},
 ];
 
 const programmaPerDag = {
@@ -90,6 +91,9 @@ const programmaPerDag = {
     { titel: 'Denver Art Museum', coords: { lat: 39.7376, lng: -104.9920 } }
   ],
   20: [
+    { titel: 'Vertrek naar vliegveld', coords: { lat: 39.8561, lng: -104.6737 } }
+  ],
+  21: [
     { titel: 'Vertrek naar vliegveld', coords: { lat: 39.8561, lng: -104.6737 } }
   ]
 };
@@ -194,3 +198,4 @@ if ('serviceWorker' in navigator) {
     .then(() => console.log('Service Worker geregistreerd'))
     .catch(err => console.log('Service Worker fout', err));
 }
+
